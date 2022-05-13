@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Panel</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <form id="form">
+            <p id="title">Form</p>
+            <div class="container">
+                <div class="inputDiv">
+                    <label>Title:</label>
+                    <input type="text" placeholder="Title" id="formTitle" required>
+                </div>
+                <div class="inputDiv">
+                    inp
+                    <label>Description:</label>
+                    <input type="text" required placeholder="Description" id="desc">
+                </div>
+                <div class="inputDiv">
+                    <label>Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+        <script>
+
+            let formEle = document.getElementById("submitButton");
+
+            formEle.onclick = function () {
+                let x = {
+                    title: document.getElementById("title").value,
+                    discription: document.getElementById("desc").value,
+                    date: document.getElementById("date").value
+                }
+                console.log(x);
+                console.log("Data Submitted");
+            };
+
+
+        </script>
+
+    </body>
+
+</html>
